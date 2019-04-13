@@ -1,0 +1,281 @@
+/*HTML reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration: none !important;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/*General*/
+@font-face {
+  font-family: 'irsans';
+  src: url('fonts/IranSans/IRAN-Sans.eot'); /* IE9 Compat Modes */
+  src: url('fonts/IranSans/IRAN-Sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/IranSans/IRAN-Sans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/IranSans/IRAN-Sans.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/IranSans/IRAN-Sans.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/IranSans/IRAN-Sans.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.eot');
+  src: url('Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.woff2') format('woff2'),
+       url('Vazir/Vazir.woff') format('woff'),
+       url('Vazir/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.Bold.eot');
+  src: url('Vazir/Vazir.Bold.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.Bold.woff2') format('woff2'),
+       url('Vazir/Vazir.Bold.woff') format('woff'),
+       url('Vazir/Vazir.Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.Light.eot');
+  src: url('Vazir/Vazir.Light.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.Light.woff2') format('woff2'),
+       url('Vazir/Vazir.Light.woff') format('woff'),
+       url('Vazir/Vazir.Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.Medium.eot');
+  src: url('Vazir/Vazir.Medium.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.Medium.woff2') format('woff2'),
+       url('Vazir/Vazir.Medium.woff') format('woff'),
+       url('Vazir/Vazir.Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.Thin.eot');
+  src: url('Vazir/Vazir.Thin.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.Thin.woff2') format('woff2'),
+       url('Vazir/Vazir.Thin.woff') format('woff'),
+       url('Vazir/Vazir.Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir/Vazir.Black.eot');
+  src: url('Vazir/Vazir.Black.eot?#iefix') format('embedded-opentype'),
+       url('Vazir/Vazir.Black.woff2') format('woff2'),
+       url('Vazir/Vazir.Black.woff') format('woff'),
+       url('Vazir/Vazir.Black.ttf') format('truetype');
+  font-weight: 900;
+}
+body{
+	font-family:Vazir;
+}
+a{
+	color:#3f3f3f;
+}
+a:hover{
+	color:#3e1504;
+}
+hr.customize-hr {
+    background-image: url(../img/dot.png);
+    background-repeat-y: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 22px;
+    border: none;
+}
+/*Menu Nav Header*/
+header.menu-header {
+    padding: 2rem 0 0 0;
+}
+a.nav-link {
+    font-weight: bold;
+    margin: 0 0.8rem;
+    padding: .5rem 1.2rem;
+}
+h1.title-site a {
+    font-size: 2rem;
+}
+.nav > li {
+	    position: relative
+	}
+.nav > li:after{
+	    content: "";
+	    position: absolute;
+	    width: 6px;
+	    height: 6px;
+	    background: #3f3f3f;
+	    top: 50%;
+	    margin-top: -2px;
+	    left: -3px;
+	    z-index: 1;
+	    border-radius: 6px;
+	}
+.nav > li:last-child:after {
+	width: 0px;
+}
+a.nav-link.active {
+    border-image-slice: 15 25 13 25 fill;
+	border-image-width: 20px 20px 20px 20px;
+	border-image-outset: 0px 0px 0px 0px;
+	border-image-repeat: stretch stretch;
+    border-image-source: url(../img/h-link.png);
+}
+
+/*box github*/
+.box {
+    padding: 5em 0;
+}
+.box-github{
+	background:#fec02f;
+}
+.img-box{
+	width:100%;
+}
+/* text box*/
+p.lead {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: justify;
+}
+.pre-button img {
+    width: 14%;
+    display: grid;
+    margin: auto;
+}
+a.pre-button {
+    text-align: center;
+    height: auto;
+    padding: 13% 0 0 0;
+}
+.pre-button:hover {
+	background: rgba(200,200,200,0.19);
+}
+.pre-button span {
+    display: grid;
+    margin-top: 1em;
+}
+/*button*/
+a.button {
+    border-image-slice: 15 25 13 25 fill;
+    border-image-width: 19px 22px 19px 26px;
+    border-image-outset: 0px 0px 0px 0px;
+    font-size: 1.2em;
+    border-image-repeat: stretch stretch;
+    padding: 0.6em 2em;
+    color: #000;
+    font-weight: bold;
+    border-image-source: url(../img/h-link.png);
+	text-decoration: none;
+}
+
+
+/* cart */
+.card-img {
+    width: 80%;
+    border-radius: calc(.25rem - 1px);
+}
+img.card-img {
+    margin-right: 12px;
+    width: 50%;
+    top: 21%;
+    position: relative;
+    right: 3px;
+}
+img.b-box-card-img {
+    position: absolute;
+    width: 170%;
+    top: 6%;
+    right: -47%;
+	display:none;
+}
+.cart-box-cat:hover .b-box-card-img {
+    display: block;
+}
+small.text-muted {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
